@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Pesquisa Eleitoral</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>📊 Pesquisa de Intenção de Voto</h1>
+  <p>
+    Este site coleta opiniões de forma anônima para fins educativos.
+  </p>
+</header>
+
+<nav>
+  <button onclick="abrirAba('presidente')">Presidente</button>
+  <button onclick="abrirAba('deputado')">Deputado</button>
+  <button onclick="abrirAba('prefeito')">Prefeito</button>
+  <button onclick="abrirAba('vereador')">Vereador</button>
+</nav>
+
+<main>
+
+  <section id="presidente" class="aba ativa">
+    <h2>Presidente</h2>
+    <label><input type="radio" name="presidente"> Candidato A</label><br>
+    <label><input type="radio" name="presidente"> Candidato B</label><br>
+    <button onclick="enviar()">Enviar</button>
+  </section>
+
+  <section id="deputado" class="aba">
+    <h2>Deputado</h2>
+    <label><input type="radio" name="deputado"> Candidato A</label><br>
+    <label><input type="radio" name="deputado"> Candidato B</label><br>
+    <button onclick="enviar()">Enviar</button>
+  </section>
+
+  <section id="prefeito" class="aba">
+    <h2>Prefeito</h2>
+    <label><input type="radio" name="prefeito"> Candidato A</label><br>
+    <label><input type="radio" name="prefeito"> Candidato B</label><br>
+    <button onclick="enviar()">Enviar</button>
+  </section>
+
+  <section id="vereador" class="aba">
+    <h2>Vereador</h2>
+    <label><input type="radio" name="vereador"> Candidato A</label><br>
+    <label><input type="radio" name="vereador"> Candidato B</label><br>
+    <button onclick="enviar()">Enviar</button>
+  </section>
+
+</main>
+
+<script src="script.js"></script>
+
+</body>
+</html>
